@@ -1,0 +1,108 @@
+/*----Blog começa aqui----*/
+.blog {
+	padding-top: 20px;
+}
+
+.blog-padding-right{
+  padding-right:35px;
+}
+
+.masonery_area .single-blog{}
+.masonery_area .single-blog .post-thumb{
+  height: auto;
+}
+
+.masonery_area .single-blog .post-title{
+  margin-top: 5px;
+}
+
+.masonery_area .single-blog .post-title a{
+  font-size: 20px;
+}
+
+.masonery_area .single-blog .post-thumb img{
+  height:auto;
+}
+
+.masonery_area .single-blog .post-bottom{
+  border-top:0;
+  padding-top:0;
+  margin-top:15px;
+}
+
+.post-title a{
+  color: #686868;
+}
+
+.post-content .post-author{
+  margin-top: 0;
+  
+}
+
+.post-content  .post-author a{
+  font-weight: 300;
+  font-size: 14px;
+  color: #0099AE;
+}
+
+a.read-more{
+  color: #0099AE;
+  font-weight: 300;
+}
+
+a.read-more:hover{
+  color: #01707F
+}
+/*-------Fim blog--------*/
+
+/*-------Inicio footer--------*/
+
+footer {
+  display: block;
+  clear:both;
+  background-color: #EEE;
+  margin-top: 15px;
+}
+
+footer section {
+  margin-top: 35px;
+  padding: 10px;
+  padding-left: 50px;
+}
+
+footer section h1 {
+  margin-bottom:10px;
+  font-size:16px;
+}
+
+footer ul {
+  list-style:none;
+  padding-bottom: 100px;
+}
+
+footer ul li {
+  margin-left:20px;
+}
+
+footer ul li a{
+  color:#999;
+  text-decoration:none;
+}
+
+footer ul li a:hover{
+  text-decoration:underline;
+}
+
+.teste1 {
+  background-color: red;
+}
+
+.teste2 {
+  background-color: blue;
+}
+
+/* --------------Topo--------------*/
+
+.topo {
+  margin-top: 40px;
+}
