@@ -29,6 +29,17 @@
 
 	    <script type="text/javascript">
 	    	
+
+	    	$(document).ready(function() {
+
+	    		$(".controle-div").find('li').each(function(){
+	    			console.log($(this));
+	    			$(this).click(alert('teste'));
+	    			
+	    		});
+
+
+			});
 	    	
 	    </script>>
 
@@ -50,34 +61,34 @@
 							Rotaract
 						</a>
 						<!-- A partir daqui coloca-se tudo que deve ser escondido no menu a menos de 940px -->
-						<div class="nav-collapse collapse">
-							<ul class="nav">
-								<li>
-									<a href="fase1.php">
+						<div name="controle-div"class="nav-collapse">
+							<ul class="nav"  >
+								<li id="1" class="pagination-small ">
+									<a href="#">
 										Convenios Fase 1
 									</a>
 								</li>
-								<li>
-									<a href="propostas.php">
+								<li id="2" class="pagination-small ">
+									<a href="#">
 										Propostas
 									</a>
 								</li>
-								<li>
-									<a href="convenios.php">
+								<li id="3" class="pagination-small ">
+									<a href="#">
 										Convenios
 									</a>
 								</li>
-								<li>
+								<li id="4" class="pagination-small ">
 									<a href="#">
 										Dados Administrativos
 									</a>
 								</li>
-								<li>
+								<li id="5" class="pagination-small ">
 									<a href="#">
 										Chat
 									</a>
 								</li>
-								<li>
+								<li id="6" class="pagination-small ">
 									<a href="#">
 										Forum
 									</a>
@@ -111,14 +122,40 @@
 		</header>
 
 
-		<div class="container">
-			<div class="row-fluid">
-				
-			</div>
-		</div>
+		
+		  <div class="container-fluid" name="1" style="display:none" >
+		    <label class="col-sm-2 control-label">div 1 </label>
+		  	<h6>Convenios Faz1</h6>
+		   
+		  </div>
+		  <div class="container-fluid" name="2" style="display:none" >
+		    <label  class="col-sm-2 control-label">div 2 </label>
+		  	<h6>Propostas</h6>
+		  </div>
+		  <div class="container-fluid" name="3" style="display:none" >
+		    <label class="col-sm-2 control-label">div 3 </label>
+		  	<h6>Convenios</h6>
+		   
+		  </div>
+		  <div class="container-fluid" name="4" style="display:none" >
+		    <label class="col-sm-2 control-label">div 4 </label>
+		  	<h6>Dados Adminstrativos</h6>
+		   
+		  </div>
+		  <div class="container-fluid" name="5" style="display:none" >
+		    <label class="col-sm-2 control-label">div 5 </label>
+		  	<h6>Chat</h6>
+		   
+		  </div>
+		  <div class="container-fluid" name="6" style="display:none" >
+		    <label class="col-sm-2 control-label">div 6 </label>
+		  	<h6>Forum</h6>
+		    
+		  </div>
+		
 
 		<footer>
-			<div class="container">
+			<div class="container" >
 			<div class="row-fluid">
 				<section class="span4">
 					<h1>
