@@ -22,70 +22,11 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
 		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
 	    <!--[if lt IE 9]>
 	    <script src="js/html5shiv.js"></script>
 	    <script src="js/respond.min.js"></script>
 	    <![endif]-->
-
-	    <script type="text/javascript">
-	    	
-
-	    	$(document).ready(function() {
-
-				$( "#1" ).click(function() {
-					
-				    if ( $( "#div1" ).is( ":hidden" ) ) {
-				    	console.log($(this));
-					    $( "#div1" ).slideDown( "slow" );
-					} else {
-						$( "#div1" ).hide();
-					}
-				});
-				
-				// $( "#2" ).click(function() {
-				//   if ( $( "div2:first" ).is( ":hidden" ) ) {
-				// 	    $( "div2" ).slideDown( "slow" );
-				// 	} else {
-				// 		$( "div2" ).hide();
-				// 	}
-				// });
-				
-				// $( "#3" ).click(function() {
-				//   if ( $( "div3:first" ).is( ":hidden" ) ) {
-				// 	    $( "div3" ).slideDown( "slow" );
-				// 	} else {
-				// 		$( "div3" ).hide();
-				// 	}
-				// });
-				
-				
-				// $( "#4" ).click(function() {
-				//   if ( $( "div4:first" ).is( ":hidden" ) ) {
-				// 	    $( "div4" ).slideDown( "slow" );
-				// 	} else {
-				// 		$( "div4" ).hide();
-				// 	}
-				// });
-				
-				// $( "#5" ).click(function() {
-				//   if ( $( "div5:first" ).is( ":hidden" ) ) {
-				// 	    $( "div5" ).slideDown( "slow" );
-				// 	} else {
-				// 		$( "div5" ).hide();
-				// 	}
-				// });
-				
-				// $( "#6" ).click(function() {
-				//   if ( $( "div6:first" ).is( ":hidden" ) ) {
-				// 	    $( "div6" ).slideDown( "slow" );
-				// 	} else {
-				// 		$( "div6" ).hide();
-				// 	}
-				// });
-
-			});
-	    	
-	    </script>>
 
 	</head>
 	<body>
@@ -107,22 +48,22 @@
 						<!-- A partir daqui coloca-se tudo que deve ser escondido no menu a menos de 940px -->
 						<div name="controle-div"class="nav-collapse">
 							<ul class="nav"  >
-								<li id="1" class="pagination-small man">
+								<li id="1" name="control"  class="pagination-small man">
 										Convenios Fase 1
 								</li>
-								<li id="2" class="pagination-small man">
+								<li id="2" name="control" class="pagination-small man">
 										Propostas
 								</li>
-								<li id="3" class="pagination-small man">
+								<li id="3" name="control" class="pagination-small man">
 										Convenios
 								</li>
-								<li id="4" class="pagination-small man">
+								<li id="4" name="control" class="pagination-small man">
 										Dados Administrativos
 								</li>
-								<li id="5" class="pagination-small man">
+								<li id="5" name="control" class="pagination-small man">
 										Chat
 								</li>
-								<li id="6" class="pagination-small man">
+								<li id="6" name="control" class="pagination-small man">
 										Forum
 								</li>
 							</ul>
@@ -159,31 +100,31 @@
 		
 
 		
-		  <div id="div1" class="container-fluid span12" style="display:none" name="1" >
+		  <div id="div1" class="container-fluid span12" style="display:none" >
 		    <label class="col-sm-2 control-label">div 1 </label>
 		  	<h6>Convenios Faz1</h6>
 		   
 		  </div>
-		  <div id="div2"class="container-fluid span12" style="display:none" name="2" >
+		  <div id="div2"class="container-fluid span12" style="display:none" >
 		    <label  class="col-sm-2 control-label">div 2 </label>
 		  	<h6>Propostas</h6>
 		  </div>
-		  <div id="div3"class="container-fluid span12" style="display:none" name="3" >
+		  <div id="div3"class="container-fluid span12" style="display:none" >
 		    <label class="col-sm-2 control-label">div 3 </label>
 		  	<h6>Convenios</h6>
 		   
 		  </div>
-		  <div id="div4"class="container-fluid span12" style="display:none" name="4" >
+		  <div id="div4"class="container-fluid span12" style="display:none" >
 		    <label class="col-sm-2 control-label">div 4 </label>
 		  	<h6>Dados Adminstrativos</h6>
 		   
 		  </div>
-		  <div id="div5"class="container-fluid span12" style="display:none" name="5" >
+		  <div id="div5"class="container-fluid span12" style="display:none" >
 		    <label class="col-sm-2 control-label">div 5 </label>
 		  	<h6>Chat</h6>
 		   
 		  </div>
-		  <div id="div6"class="container-fluid span12" style="display:none" name="6" >
+		  <div id="div6"class="container-fluid span12" style="display:none" >
 		    <label class="col-sm-2 control-label">div 6 </label>
 		  	<h6>Forum</h6>
 		    
