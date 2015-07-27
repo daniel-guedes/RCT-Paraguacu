@@ -34,54 +34,60 @@
 
 				$( "#1" ).click(function() {
 					
-				    if ( $( "#div1" ).is( ":hidden" ) ) {
-				    	console.log($(this));
+				    if ( $( "#div1:first" ).is( ":hidden" ) ) {
 					    $( "#div1" ).slideDown( "slow" );
+				    	$( "#div2, #div3, #div4, #div5, #div6" ).slideUp();	
 					} else {
-						$( "#div1" ).hide();
+						$( "#div1, #div2, #div3, #div4, #div5, #div6" ).slideUp();
 					}
 				});
 				
-				// $( "#2" ).click(function() {
-				//   if ( $( "div2:first" ).is( ":hidden" ) ) {
-				// 	    $( "div2" ).slideDown( "slow" );
-				// 	} else {
-				// 		$( "div2" ).hide();
-				// 	}
-				// });
+				$( "#2" ).click(function() {
+
+				  if ( $( "#div2:first" ).is( ":hidden" ) ) {
+					    $( "#div2" ).slideDown( "slow" );
+					    $( "#div1, #div3, #div4, #div5, #div6" ).slideUp();
+					} else {
+						$( "#div1, #div2, #div3, #div4, #div5, #div6" ).slideUp();
+					}
+				});
 				
-				// $( "#3" ).click(function() {
-				//   if ( $( "div3:first" ).is( ":hidden" ) ) {
-				// 	    $( "div3" ).slideDown( "slow" );
-				// 	} else {
-				// 		$( "div3" ).hide();
-				// 	}
-				// });
+				$( "#3" ).click(function() {
+				  if ( $( "#div3:first" ).is( ":hidden" ) ) {
+					    $( "#div3" ).slideDown( "slow" );
+						$( "#div1, #div2, #div4, #div5, #div6" ).slideUp();
+					} else {
+						$( "#div1, #div2, #div3, #div4, #div5, #div6" ).slideUp();
+					}
+				});
 				
 				
-				// $( "#4" ).click(function() {
-				//   if ( $( "div4:first" ).is( ":hidden" ) ) {
-				// 	    $( "div4" ).slideDown( "slow" );
-				// 	} else {
-				// 		$( "div4" ).hide();
-				// 	}
-				// });
+				$( "#4" ).click(function() {
+				  if ( $( "#div4:first" ).is( ":hidden" ) ) {
+					    $( "#div4" ).slideDown( "slow" );
+						$( "#div1, #div2, #div3, #div5, #div6" ).slideUp();
+					} else {
+						$( "#div1, #div2, #div3, #div4, #div5, #div6" ).slideUp();
+					}
+				});
 				
-				// $( "#5" ).click(function() {
-				//   if ( $( "div5:first" ).is( ":hidden" ) ) {
-				// 	    $( "div5" ).slideDown( "slow" );
-				// 	} else {
-				// 		$( "div5" ).hide();
-				// 	}
-				// });
+				$( "#5" ).click(function() {
+				  if ( $( "#div5:first" ).is( ":hidden" ) ) {
+					    $( "#div5" ).slideDown( "slow" );
+						$( "#div1, #div2, #div3, #div4, #div6" ).slideUp();
+					} else {
+						$( "#div1, #div2, #div3, #div4, #div5, #div6" ).slideUp();
+					}
+				});
 				
-				// $( "#6" ).click(function() {
-				//   if ( $( "div6:first" ).is( ":hidden" ) ) {
-				// 	    $( "div6" ).slideDown( "slow" );
-				// 	} else {
-				// 		$( "div6" ).hide();
-				// 	}
-				// });
+				$( "#6" ).click(function() {
+				  if ( $( "#div6:first" ).is( ":hidden" ) ) {
+					    $( "#div6" ).slideDown( "slow" );
+						$( "#div1, #div2, #div3, #div4, #div5" ).slideUp();
+					} else {
+						$( "#div1, #div2, #div3, #div4, #div5, #div6" ).slideUp();
+					}
+				});
 
 			});
 	    	
@@ -108,13 +114,13 @@
 						<div name="controle-div"class="nav-collapse">
 							<ul class="nav"  >
 								<li id="1" class="pagination-small man">
-										Convenios Fase 1
+										Quem somos?
 								</li>
 								<li id="2" class="pagination-small man">
-										Propostas
+										Projetos
 								</li>
 								<li id="3" class="pagination-small man">
-										Convenios
+										Funções
 								</li>
 								<li id="4" class="pagination-small man">
 										Dados Administrativos
@@ -137,47 +143,49 @@
 		</div>
 
 
-		<div class="container">
-			
-			<header id="header" class="modal-header">
-				<div class="container-fluid">
-					<div class="row-fluid">
-						<div class="span8">
-							<h1>
-								<img src="img/rct-ppta.png" alt="Sistema - eConv" width="260px" height="90px">
-							</h1>
-						</div>
-						<div class="span4">
-							<h1>Possiveis dados de contato</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur, nam accusamus, numquam officia, cum iure doloremque odit?</p>
-						</div>
+		<header id="header" class="modal-header">
+			<div class="container">
+				<div class="row-fluid">
+					<div class="span8">
+						<h1>
+							<img src="img/rct-ppta.png" alt="Sistema - eConv" width="260px" height="90px">
+						</h1>
 					</div>
-					
+					<div class="span4">
+						<h1>Possiveis dados de contato</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur, nam accusamus, numquam officia, cum iure doloremque odit?</p>
+					</div>
 				</div>
-			</header>
+				
+			</div>
+		</header>
 
 		
 
+		<div class="container">
 		
 		  <div id="div1" class="container-fluid span12" style="display:none" name="1" >
 		    <label class="col-sm-2 control-label">div 1 </label>
 		  	<h6>Convenios Faz1</h6>
-		   
 		  </div>
+		 
 		  <div id="div2"class="container-fluid span12" style="display:none" name="2" >
 		    <label  class="col-sm-2 control-label">div 2 </label>
 		  	<h6>Propostas</h6>
 		  </div>
+		 
 		  <div id="div3"class="container-fluid span12" style="display:none" name="3" >
 		    <label class="col-sm-2 control-label">div 3 </label>
 		  	<h6>Convenios</h6>
 		   
 		  </div>
+		 
 		  <div id="div4"class="container-fluid span12" style="display:none" name="4" >
 		    <label class="col-sm-2 control-label">div 4 </label>
 		  	<h6>Dados Adminstrativos</h6>
 		   
 		  </div>
+		 
 		  <div id="div5"class="container-fluid span12" style="display:none" name="5" >
 		    <label class="col-sm-2 control-label">div 5 </label>
 		  	<h6>Chat</h6>
